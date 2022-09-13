@@ -48,8 +48,6 @@ body {
     background-position: center;
     background-size: cover;
     background-color: #C4C4C4;
-   
-
 }
 
 /* Header */
@@ -130,6 +128,24 @@ body {
     margin-left: 50px;
 }
 
+.icon-link {
+    text-decoration: none;
+}
+
+.contacts-icon {
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+}
+
+.contacts-icon:hover,
+.contacts-icon:focus {
+    fill: var(--accent-color);
+}
+
+.icon-svg {
+    margin-right: 10px;
+}
+
 .contacts .link {
     color: var(--primary-text-color);
 
@@ -199,6 +215,22 @@ p {
 }
 
 /* Sections */
+
+.advantage-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    width: 270px;
+    background-color: var(--primary-background-color);
+}
+
+.advantage-icon {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+}
 
 .section {
     padding-top: 94px;
