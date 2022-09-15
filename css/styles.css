@@ -305,6 +305,8 @@ img {
     text-align: center;
 }
 
+/* Наші переваги */
+
 .advantage-list {
     display: flex;
     flex-wrap: wrap;
@@ -329,6 +331,8 @@ img {
     text-transform: uppercase;
 }
 
+/* Наша команда */
+
 .photos .title {
     color: var(--title-text-color);
 }
@@ -350,14 +354,12 @@ img {
 .team-social {
     display: flex;
     justify-content: center;
-    
 }
 
 .social-svg {
     width: 20px;
     height: 20px;
     fill: var(--social-link);
-    
 }
 
 .social-link {
@@ -377,7 +379,6 @@ img {
 
 .link-svg {
     display: flex;
-    
 }
 
 .link-svg:hover svg,
@@ -385,13 +386,45 @@ img {
     fill: var(--white);
 }
 
-
 .team-social .social-item:not(:last-child) {
     margin-right: 22px;
 }
 
 .team-social .social-item {
     margin-bottom: 30px;
+}
+
+/* Постійні клієнти */
+
+.client-list {
+    display: flex;
+    justify-content: center;
+}
+
+.client-logo {
+    fill: var(--social-link);
+}
+
+.client-around {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--social-link);
+    border-radius: 4px;
+}
+
+.client-around:hover svg,
+.client-around:focus svg {
+    fill: var(--accent-color);
+}
+
+.client-around:hover,
+.client-around:focus {
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
 }
 
 .item .filter {
