@@ -34,7 +34,7 @@ body {
     padding-right: 15px;
 }
 
-.hero .container {
+/* .hero .container {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
@@ -49,7 +49,7 @@ body {
     background-position: center;
     background-size: cover;
     background-color: #C4C4C4;
-}
+} */
 
 /* Header */
 
@@ -134,7 +134,6 @@ body {
 }
 
 .contacts-icon {
-    margin-right: 10px;
     fill: var(--primary-text-color);
 }
 
@@ -148,6 +147,8 @@ body {
 }
 
 .contacts .link {
+    display: flex;
+    align-items: center;
     color: var(--primary-text-color);
 
     font-weight: 500;
@@ -178,6 +179,16 @@ p {
 .hero {
     background-color: var(--secondary-background-color);
     text-align: center;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    min-height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.2)), url(../img/background-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #C4C4C4;
 }
 
 .hero-title {
@@ -222,6 +233,7 @@ p {
     margin-bottom: 30px;
     width: 270px;
     background-color: var(--primary-background-color);
+    border-radius: 4px;
 }
 
 .advantage-icon {
@@ -278,13 +290,17 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
+.card-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .item-card .title {
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
 .item-card .photos-text {
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 }
 
 .photos .item-card:not(:last-child) {
@@ -368,6 +384,7 @@ img {
     align-items: center;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
 }
 
 .social-link:hover,
@@ -382,54 +399,40 @@ img {
     fill: var(--white);
 }
 
-.link-svg {
-    display: flex;
-}
-
-/* .link-svg:hover svg,
-.link-svg:focus svg {
-    fill: var(--white);
-} */
-
 .team-social .social-item:not(:last-child) {
     margin-right: 10px;
-}
-
-.team-social .social-item {
-    margin-bottom: 30px;
 }
 
 /* Постійні клієнти */
 
 .client-list {
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
-.client-logo {
-    fill: var(--social-link);
-}
-
-.client-around {
+.client-link {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 30px;
-    width: 170px;
-    height: 92px;
     border: 1px solid var(--social-link);
     border-radius: 4px;
+    width: 170px;
+    height: 92px;
 }
 
-.client-around:hover svg,
-.client-around:focus svg {
-    fill: var(--accent-color);
-}
-
-.client-around:hover,
-.client-around:focus {
+.client-link:hover,
+.client-link:focus {
     border: 1px solid var(--accent-color);
-    border-radius: 4px;
+}
+
+.client-link:hover svg,
+.client-link:focus svg {
+    fill: var(--accent-color);
+} 
+
+.client-logo {
+    fill: var(--social-link);
 }
 
 /* Портфоліо */
@@ -479,8 +482,12 @@ img {
     margin-bottom: 30px;
 }
 
-.projects .item:hover,
-.projects .item:focus {
+.projects .link {
+    display: block;
+}
+
+.projects .link:hover,
+.projects .link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -568,7 +575,7 @@ img {
     margin-left: 70px;
 }
 
-.footer-social .link-svg {
+.footer-social .social-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -582,14 +589,14 @@ img {
     fill: var(--white);
 }
 
-.footer-social .social-item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.footer-social .link-svg:hover,
-.footer-social .link-svg:focus {
+.footer-social .social-link:hover,
+.footer-social .social-link:focus {
     background-color: var(--accent-color);
     fill: var(--white);
+}
+
+.footer-social .social-item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .social {
@@ -599,7 +606,7 @@ img {
 
 .footer-title {
     font-size: 14px;
-    font-weight: 700px;
+    font-weight: 700;
     line-height: 16.41px;
     text-transform: uppercase;
     color: var(--white);
