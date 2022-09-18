@@ -9,6 +9,7 @@
     --header-border: #ECECEC;
     --projects-border: #EEEEEE;
     --social-link: #AFB1B8;
+    --button-hover: #188CE8;
 }
 
 body {
@@ -203,7 +204,6 @@ p {
 }
 
 .btn {
-    display: inline-block;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -223,6 +223,11 @@ p {
 
 .btn:active {
     color: var(--secondary-background-color);
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--button-hover);
 }
 
 /* Sections */
@@ -300,7 +305,7 @@ img {
 }
 
 .item-card .photos-text {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .photos .item-card:not(:last-child) {
@@ -407,14 +412,16 @@ img {
 
 .client-list {
     display: flex;
-    align-items: center;
+}
+
+.client-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .client-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 30px;
     border: 1px solid var(--social-link);
     border-radius: 4px;
     width: 170px;
